@@ -2,30 +2,20 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>TimeMaster Pro</title>
+  <meta name="viewport" content="width=device-width" />
+  <title>Time Tracker - TimeMaster Pro</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <div class="container">
-    <h1>⏱️ TimeMaster Pro</h1>
+    <h1>🎨 TimeMaster Pro</h1>
 
-    <div class="pomodoro">
-      <h2>Pomodoro Timer</h2>
-      <div id="timer">25:00</div>
-      <div class="buttons">
-        <button onclick="startTimer()">Start</button>
-        <button onclick="pauseTimer()">Pause</button>
-        <button onclick="resetTimer()">Reset</button>
-      </div>
+    <div class="task-form">
+      <input type="text" id="taskInput" placeholder="Enter task name..." />
+      <button id="addBtn">➕ Add Task</button>
     </div>
 
-    <div class="task-tracker">
-      <h2>Your Tasks</h2>
-      <input type="text" id="taskInput" placeholder="Enter a new task..." />
-      <button onclick="addTask()">Add Task</button>
-      <ul id="taskList"></ul>
-    </div>
+    <ul id="taskList" class="task-list"></ul>
   </div>
 
   <script src="script.js"></script>
